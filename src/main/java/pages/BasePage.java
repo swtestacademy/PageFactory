@@ -13,7 +13,7 @@ public class BasePage extends PageGenerator {
         super(driver);
     }
 
-    //If we need we can use custom wait in BasePage class
+    //If we need we can use custom wait in BasePage and all page classes
     WebDriverWait wait = new WebDriverWait(this.driver,20);
 
     //Click Method by using JAVA Generics (You can use both By or Webelement)
