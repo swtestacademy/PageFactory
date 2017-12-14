@@ -21,16 +21,6 @@
             <artifactId>testng</artifactId>
             <version>RELEASE</version>
         </dependency>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-api</artifactId>
-            <version>3.6.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-support</artifactId>
-            <version>3.6.0</version>
-        </dependency>
     </dependencies>
 
     <build>
