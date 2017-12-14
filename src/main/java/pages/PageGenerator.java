@@ -22,7 +22,8 @@ public class PageGenerator {
             //Initialize the Page with its elements and return it.
             return PageFactory.initElements(driver,  pageClass);
         } catch (Exception e) {
-            return null;
+            e.printStackTrace();
+            throw e;
         }
     }
 }
