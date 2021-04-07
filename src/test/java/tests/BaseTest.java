@@ -4,7 +4,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import pages.PageGenerator;
 
@@ -13,7 +15,7 @@ public class BaseTest {
     public WebDriverWait wait;
     public PageGenerator page;
 
-    @BeforeMethod
+    @BeforeClass
     public void setup () {
     	
     	
@@ -37,7 +39,7 @@ public class BaseTest {
         page = new PageGenerator(driver);
     }
 
-    @AfterMethod
+    @AfterClass
     public void teardown () {
         driver.quit();
     }
