@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.LoginPage;
 
-public class LoginTests extends BaseTest {
+public class LoginTests2 extends BaseTest {
 
     @Test (priority = 0)
     public void invalidLoginTest_InvalidUserNameInvalidPassword () throws InterruptedException {
